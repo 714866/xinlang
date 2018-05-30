@@ -1,0 +1,45 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258221419,	//vid
+							pic: '//n.sinaimg.cn/front/199/w640h359/20180524/b-oq-fzrwiaz5856824.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/front/199/w640h359/20180524/b-oq-fzrwiaz5856824.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频：64岁老汉商场内袭胸小学女生：就为找点儿刺激',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/o/doc/2018-05-25/072368537178.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　原标题：64岁男子商场袭胸女学生，称为寻刺激
+　　近日，广西河池一商场内，一男子迎面走向女学生，用手部触碰女学生胸部后离开。嫌疑男子今年64岁，其到案后供称是为寻刺激。目前，该男子已被警方依法行拘。
+				
+				  
+				
+				
+责任编辑：余鹏飞 
+				
+				
+			

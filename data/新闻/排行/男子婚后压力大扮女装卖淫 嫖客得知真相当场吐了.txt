@@ -1,0 +1,50 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258224802,	//vid
+							pic: '//n.sinaimg.cn/news/transform/77/w550h327/20180525/904q-haysviy4647647.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/news/transform/77/w550h327/20180525/904q-haysviy4647647.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频：男子浓妆艳抹扮女装卖淫 嫖客知道真相后吐了',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/s/doc/2018-05-25/092868538776.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　原标题：男子婚后压力大扮女装卖淫 嫖客得知真相当场吐了
+
+　　近日，梅江警方在梅城东山大道某出租屋内破获一宗卖淫嫖娼案件，当场抓获两名卖淫嫖娼违法行为人，其中“卖淫女”竟是由年轻男子假扮的。
+　　记者从梅江警方获悉，梅江区金山派出所民警根据线索发现有人在梅江区东山大道某出租屋内从事卖淫嫖娼的违法活动。民警取证后最终锁定嫌疑人的落脚点，在时机成熟的情况下快速出击，当场抓获2名卖淫嫖娼违法嫌疑人李某某和廖某某。
+　　随后的情况令民警大吃一惊。民警发现，“卖淫女”竟是一名男扮女装的年轻男子。据嫌疑人李某某（男，26岁，五华县人）供述，因为他没有稳定收入，婚后家里经济负担重，为了来钱快，遂产生了“变身”卖淫这一歪念。为此，李某某留了一头长发，涂了口红，贴上假眼睫毛，穿上女性的衣服，将自己伪装成一名20来岁的“女子”，利用微信进行卖淫活动。当有男客人“上钩”，李某某便将其带到自己的出租屋内进行卖淫交易，如被发现真身，就将对方赶走。据了解，在该案中，廖某某（男，39岁，大埔县人）被抓后得知李某某系由男子假扮的，当场吐了一地。
+　　目前，公安机关已依法对卖淫嫖娼嫌疑人李某某、廖某某作出行政拘留处罚，案件仍在进一步审查中。
+　　来源：梅州日报
+				
+				  
+				
+				
+责任编辑：余鹏飞 
+				
+				
+			

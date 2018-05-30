@@ -1,0 +1,44 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258393569,	//vid
+							pic: '//n.sinaimg.cn/front/200/w640h360/20180529/A8qx-hcffhsu6437504.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/front/200/w640h360/20180529/A8qx-hcffhsu6437504.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频：山西政协一主任曾因罪获刑3年 27年来申诉3554次',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/o/doc/2018-05-29/133168617252.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　[山西政协一主任判3年后为何申诉3554次历经27年？]原山西省政协政法委办公室主任张军，因代理一起土地案，村民拒不执行判决，他被法院认定为“主使”，1991年因教唆拒不执行人民法院判决罪获刑3年，27年来申诉3554次，经历8次审判。 @新京报动新闻
+				
+				  
+				
+				
+责任编辑：张玉 
+				
+				
+			

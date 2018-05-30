@@ -1,0 +1,46 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258353541,	//vid
+							pic: '//n.sinaimg.cn/front/201/w640h361/20180528/w76E-hcaquev4421753.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/front/201/w640h361/20180528/w76E-hcaquev4421753.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频：3岁男孩被狗咬头缝10针 父亲胸部也被咬伤',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/s/doc/2018-05-28/150068599610.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　[急寻“凶狗”主人！3岁男孩被狗咬头缝10针]
+　　23日晚10时许，四川广元市民吕先生带着妻儿回家时，在南岸阳光小区内，3岁儿子被一只狗突然扑倒，咬伤头部。吕先生追打狗的过程中，胸部也被狗咬伤。吕先生称，出于气愤，他直接将狗打死在地。孩子缝合了10针 ，仍在医院观察。
+　　来源：成都商报
+				
+				  
+				
+				
+责任编辑：张义凌 
+				
+				
+			

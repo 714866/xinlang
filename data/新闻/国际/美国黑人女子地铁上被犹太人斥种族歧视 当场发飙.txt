@@ -1,0 +1,44 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258385376,	//vid
+							pic: '//n.sinaimg.cn/front/200/w640h360/20180529/jNYg-fzrwiaz6045901.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/front/200/w640h360/20180529/jNYg-fzrwiaz6045901.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频：被犹太人指责种族歧视 黑人女子当场发飙',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/o/doc/2018-05-29/104968615025.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　[被犹太人指责种族歧视 黑人女子当场发飙]5月25日，美国纽约一列地铁上，一名黑人女子因其言论被一名犹太人指责种族歧视，随后黑人女子当场发飙，还称要给犹太人好好上一课。。。
+				
+				  
+				
+				
+责任编辑：张玉 
+				
+				
+			

@@ -1,0 +1,45 @@
+
+							
+			
+			
+				SINA_TEXT_PAGE_INFO['videoDatas0'] = [						{
+							ad_state: '1',
+							pid: '1',
+							video_id: 258379180,	//vid
+							pic: '//n.sinaimg.cn/front/0/w1024h576/20180529/mwMU-hcffhsu7283601.jpg',		//节目列表小图
+							thumbUrl: '//n.sinaimg.cn/front/0/w1024h576/20180529/mwMU-hcffhsu7283601.jpg',	//html5播放器上视频还未开始播显示的图片，可与pic相同
+							title: '视频|董明珠：儿子80后 言语不多从不打骂',	//标题
+							source: '',	//视频发布来源。如：新华网。
+							url: 'http://video.sina.com.cn/p/news/c/doc/2018-05-29/084868613339.html'
+						}];
+				SinaPage.loadWidget({
+					trigger: {
+					id: 'videoList0'
+					},
+				require:[
+				{
+					url: "//sjs2.sinajs.cn/video/sinaplayer/js/page/player_v1.js"
+				},
+				{
+					url: "//finance.sina.com.cn/other/src/sinaPageVideo2017.js"
+				}
+				],
+				onAfterLoad: function () {
+					new SinaPageVideo({ 
+						 wrap:'videoList0',//播放器外层id 
+		 				videoList:SINA_TEXT_PAGE_INFO['videoDatas0']
+				 });
+			}
+			});
+		
+		
+　　原标题：董明珠：儿子80后，言语不多从不打骂
+　　5月28日，董明珠在创赢未来第二季的节目中谈及自己与儿子的交流方式，她表示儿子是80后，虽然母子之间言语不多，但从小到大没有打骂、批评过他一次。
+				
+				  
+				
+				
+责任编辑：张玉 
+				
+				
+			
