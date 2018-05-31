@@ -1,3 +1,3 @@
 from scrapy import cmdline
 
-cmdline.execute('spider crawl newspider'.split())
+cmdline.execute('scrapy runspider xinlannews/spiders/newspider.py'.split())

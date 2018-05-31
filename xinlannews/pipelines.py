@@ -17,7 +17,7 @@ class XinlannewsPipeline(object):
         self.filename = codecs.open(item['subFilename'] + '.txt', 'w', encoding='utf-8')
         self.filename.write(item['content'])
         self.filename.close()
-        print '#'*50
+        print '#$'*50
         return item
     def close_spider(self,spider):
 

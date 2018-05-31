@@ -9,6 +9,33 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
+'''
+#
+SPIDER_MODULES = ['example.spiders']
+NEWSPIDER_MODULE = 'example.spiders'
+
+USER_AGENT = 'scrapy-redis (+https://github.com/rolando/scrapy-redis)'
+
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+SCHEDULER_PERSIST = True
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderStack"
+
+ITEM_PIPELINES = {
+    'example.pipelines.ExamplePipeline': 300,
+    'scrapy_redis.pipelines.RedisPipeline': 400,
+}
+
+LOG_LEVEL = 'DEBUG'
+
+# Introduce an artifical delay to make use of parallelism. to speed up the
+# crawl.
+DOWNLOAD_DELAY = 1
+'''
+
+
 BOT_NAME = 'xinlannews'
 
 SPIDER_MODULES = ['xinlannews.spiders']
@@ -28,6 +55,13 @@ USER_AGENTS = [
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+SCHEDULER_PERSIST = True
+SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderStack"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -77,6 +111,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'xinlannews.pipelines.XinlannewsPipeline': 300,
+   'scrapy_redis.pipelines.RedisPipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -100,4 +135,18 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 LOG_LEVEL = 'INFO'
-LOG_FILE = 'xl.log'
+# LOG_FILE = 'xl.log'
+
+#redis配置
+REDIS_HOST='127.0.0.1'
+REDIS_PORT='6379'
+
+#mongodb配置
+MONGODB_HOST = '192.168.2.216'
+MONGODB_PORT = '27017'
+
+#mysql配置
+MYSQL_HOST = '127.0.0.1'
+MYSQL_PORT = '3306'
+MYSQL_USER = 'root'
+MYSQL_PASSWD = 'mysql'
