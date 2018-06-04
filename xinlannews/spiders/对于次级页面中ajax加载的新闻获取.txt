@@ -1,0 +1,9 @@
+
+
+
+
+1,通过get请求：http://api.roll.news.sina.com.cn/zt_list?channel=news&cat_1=gjxw&level==1||=2&show_ext=1&show_all=1&show_num=22&tag=1&format=json&page=3&callback=newsloadercallback
+设置page，获取不同页面的返回，
+2,对返回的response.body 进行处理，是使用,lstrip去掉开头的'  newsloadercallback(',rstrip对掉结尾的');'
+3,进行json.loads转换成python的字典，进行操作，
+4，对转换后的dict['result']['data']获取次级页面中的新闻标题和新闻详情url地址
